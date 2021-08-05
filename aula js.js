@@ -48,12 +48,15 @@
 */
     // Datas: 
     var d = new Date();
+    var mes = d.getMonth()+1;
     console.log("Imprimindo new Date() "+"\n"+d) //Imprime toda imformação da data
     console.log("Imprimindo d.getDate() " + d.getDate()) //vai imprimir apenas o dia do mês (a começar por zero) 
     console.log("Imprimindo d.getDay() " + d.getDay()) //vai imprimir o dia da semana (em número: 0=Domingo, 1=Seg, 2=Ter, etc)
-    console.log("Imprimindo d.getMonth()") 
-    console.log(d.getMonth()+1) //vai imprimir o dia do mês (em número: 0=Jan, 1=Fev, 2=Mar, etc)
+    console.log("Imprimindo d.getMonth() "+ mes) //(em número: 0=Jan, 1=Fev, 2=Mar, etc) 
+    // console.log() //vai imprimir o dia do mês 
+    console.log("Hora atual "+d.getHours()+":"+d.getMinutes())
 
+/*
     var dia;
     switch(d.getDay()){
         
@@ -87,4 +90,22 @@
             default:
                 dia="Dia invalido, confira o script"
     }
+  
     // alert("Hoje é: "+dia)
+
+    function soma(a,b){
+        return a+b
+    }
+    alert(soma(10,5))
+
+    function setReplace(frase, nome, novo_nome){
+        return frase.replace(nome,novo_nome)
+    }
+    alert(setReplace("A melhor bebida para matar a sede é a Coca","Coca", "água"))
+
+*/
+
+//manipulando elementos da página
+
+//document.getElementById
+// desafio criar uma tabela e colocar um botão que acrescente uma nova linha
