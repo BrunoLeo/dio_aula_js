@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript" src="revisao_aula_js.js"></script>
+    </head>
+    <body onload="load()">
+        <h1>Revisao JS</h1>
+        <section>
+            <button id="bt" onclick="clicou()">Meu botão</button>
+            <p id="agradecimento" onclick="redirencionar()"></p>
+            <p id="mouseover" onmouseover="trocar(this)" onmouseleave="voltar(this)">Passe o mouse aqui</p>
+            <p id="mouseover2" onmouseover="trocar(this)" onmouseleave="voltar(this)">Passe o mouse aqui</p>
+        </section>
+        <section>
+            <select onchange="change(this)">
+                <option value="1" class="a1">valor 1</option>
+                <option value="2" class="a2">valor 2</option>
+                <option value="3" class="a3">valor 3 </option>
+            </select>
+        </section>
+
+    </body>
+</html>
